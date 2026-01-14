@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import xyz.shockinteractive.betterpaintings.item.ModItems;
 
 public class BetterPaintings implements ModInitializer {
 	public static final String MOD_ID = "better-paintings";
@@ -11,6 +12,6 @@ public class BetterPaintings implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
